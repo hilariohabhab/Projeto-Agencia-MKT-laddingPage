@@ -264,15 +264,12 @@ section.depoimentos > h1 {
 }
 
 .slick-slide {
-    margin-left:27px;
+  margin-left: 27px;
+}
 
-  }
-
-
-  .slick-list {
-    margin-left:-27px;
-   
-  }
+.slick-list {
+  margin-left: -27px;
+}
 
 .slick-dotted ul {
   display: block;
@@ -295,16 +292,16 @@ section.depoimentos > h1 {
   width: 16px;
   height: 16px;
   border-radius: 8px;
-  color: #D2D8EB;
+  color: #d2d8eb;
   border-width: 0;
-  background: #D2D8EB;
+  background: #d2d8eb;
   opacity: 1;
   cursor: pointer;
 }
 
 li.slick-active button {
-  background: #255AFF ;
-  color: #255AFF ;
+  background: #255aff;
+  color: #255aff;
 }
 
 .slick-slide:focus {
@@ -312,22 +309,21 @@ li.slick-active button {
 }
 /* FIM DO SLIDER */
 
-
-section.contato{
+section.contato {
   padding: 40px 0;
   text-align: center;
 }
 
-section.contato h1{
+section.contato h1 {
   font-size: 40px;
 }
 
-section.contato form{
+section.contato form {
   width: 100%;
 }
 
-.contato input[type=text],
-.contato input[type=email]{
+.contato input[type="text"],
+.contato input[type="email"] {
   width: 100%;
   height: 50px;
   margin: 20px 0;
@@ -337,7 +333,7 @@ section.contato form{
   padding-left: 10px;
 }
 
-.contato textarea{
+.contato textarea {
   width: 100%;
   height: 120px;
   margin: 20px 0;
@@ -348,53 +344,103 @@ section.contato form{
   resize: vertical;
 }
 
-.contato input[type=submit]{
+.contato input[type="submit"] {
   width: 50%;
   height: 50px;
   display: block;
   cursor: pointer;
   border: 0;
-  background-color: #255AFF;
+  background-color: #255aff;
   color: #fff;
   font-size: 16px;
   border-radius: 10px;
   margin-left: 25%;
 }
 
-footer{
+footer {
   padding: 10px 0;
-  background-color: #255AFF;
+  background-color: #255aff;
   color: #fff;
   height: 100px;
   max-width: 100%;
   margin-top: 100px;
 }
 
-.text-footer{
+.text-footer {
   width: 47%;
   padding: 32px 0;
 }
 
-.link-footer{
+.link-footer {
   padding: 22px 0;
 }
 
-.link-footer img{
+.link-footer img {
   max-width: 40px;
-  justify-content: end;
   text-decoration: none;
-  margin: 0 10px;  
+  margin: 0 10px;
 }
 
 .link-footer:hover {
   border-bottom: none;
 }
 
+.items-menu-mobile {
+  display: none;
+  width: 50%;
+  text-align: right;
+}
 
+.items-menu-mobile i {
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  position: relative;
+}
 
 /*! RESPONSIVO */
 
 @media screen and (max-width: 768px) {
+  .items-menu-mobile {
+    display: block;
+  }
+
+  .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 25%;
+    height: 730px;
+    padding: 20px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #9933cc75, #cdaddd75);
+  }
+
+  .show {
+    opacity: 1;
+  }
+
+  .hide {
+    opacity: 0;
+  }
+
+  .menu-mobile a {
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  section.main .items-menu {
+    display: none;
+  }
+
   .diferenciais {
     flex-wrap: wrap;
   }
@@ -420,10 +466,10 @@ footer{
     width: 100%;
     margin-bottom: 30px;
   }
-  footer{
+  footer {
     height: auto;
   }
-  footer .items-menu{
+  footer .items-menu {
     width: 100%;
     text-align: center;
   }
@@ -432,9 +478,13 @@ footer{
     flex-wrap: nowrap;
     justify-content: center;
   }
-  .text-footer{
-  width: 100%;
-  text-align: center;
-}
-
+  .text-footer {
+    width: 100%;
+    text-align: center;
+  }
+  .logo-menu {
+    width: 50%;
+    position: relative;
+    right: 0;
+  }
 }
